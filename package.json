@@ -4,6 +4,7 @@
 	"description": "Informational site for BigSexyPoems.",
 	"scripts": {
 		"build": "parcel build ./src/index.html --out-dir ./build",
+		"postbuild": "mkdir -p ./build/assets/images/meta && cp ./src/assets/images/meta/* ./build/assets/images/meta/",
 		"prebuild": "rm -rf ./build",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"watch": "parcel ./src/index.html --out-dir ./build"
