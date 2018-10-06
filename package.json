@@ -1,0 +1,26 @@
+{
+	"name": "www.bigsexypoems.com",
+	"version": "1.0.0",
+	"description": "Informational site for BigSexyPoems.",
+	"scripts": {
+		"build": "parcel build ./src/index.html --out-dir ./build",
+		"prebuild": "rm -rf ./build",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"watch": "parcel ./src/index.html --out-dir ./build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bennadel/big-sexy-poems-www.git"
+	},
+	"author": "Ben Nadel <ben@bennadel.com>",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/bennadel/big-sexy-poems-www/issues"
+	},
+	"homepage": "https://github.com/bennadel/big-sexy-poems-www#readme",
+	"dependencies": {
+		"less": "3.8.1",
+		"parcel-bundler": "1.10.1",
+		"posthtml-include": "1.2.0"
+	}
+}
